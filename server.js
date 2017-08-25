@@ -21,7 +21,7 @@ var articleOne = {
                         <p>THis is the content of my first article and I am going to write this with my full devotion and I am not goin gto make any mistake in my codin and I will always attend the lectures of coding properly and I am going to score more marks as looking towards y practice.THis is the content of my first article and I am going to write this with my full devotion and I am not goin gto make any mistake in my codin and I will always attend the lectures of coding properly and I am going to score more marks as looking towards y practice.
                         </p>`
 };
- function createTemplate(data) {
+ function createTemplate (data) {
      var title = data.title;
      var date = data.date;
      var heading = data.heading;
@@ -62,7 +62,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one', function(req,res) {
-  res.send(createTemplate(atricleOne));
+  res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function(req,res) {
